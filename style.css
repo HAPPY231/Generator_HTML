@@ -1,62 +1,100 @@
-*{
-    margin: 0 !important;
-    padding: 0 !important;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@700&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #e8e8e8;
 }
-.sematic{
+.two{
     width: 100%;
+    display: flex;
+}
+.structur{
+    width: 50%;
+    padding-left: 50px;
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.semantic{
+    width: 50%;
+    height:auto;
     padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.semantic input[type="submit"], .structur input[type="submit"]{
+
+    background-color: #fff;
+    border: 1px solid #d5d9d9;
+    border-radius: 8px;
+    box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+    box-sizing: border-box;
+    color: #0f1111;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Amazon Ember",sans-serif;
+    font-size: 20px;
+    line-height: 29px;
+    padding: 10px 10px 10px 11px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    width: auto;
+    margin:10px;
+    max-height: 50px;
+}
+
+.semantic input[type="submit"]:hover, .structur input[type="submit"]:hover{
+    background-color: #f7fafa;
+}
+
+.semantic input[type="submit"]:focus, .structur  input[type="submit"]:focus{
+    border-color: #008296;
+    box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+    outline: 0;
+    
+}
+.textareas{
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    justify-content: space-around;
+    transition: all 0.4s ease-in-out;
+}
+.textareas img{
+    position: fixed;
+    bottom: 100px;
+    right: 50px;
+
+    transition: all 0.5s ease-in-out;
+
+}
+.textareas img:hover{
+    width: 84px;
+    height: 84px;
+    cursor: pointer;
+}
+.textareas textarea{
+    border: 3px solid #02b6d1;
+    border-radius: 12px;
+}
+footer{
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+    background-color: #0f1111;
+    color: #ffff;
+    font-size: 25px;
     display: flex;
     align-content: center;
     align-items: center;
     justify-content: center;
-}
-.sematic input[type="submit"]{
-
-  align-items: center;
-  background-color: #FFFFFF;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: .25rem;
-  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
-  box-sizing: border-box;
-  color: rgba(0, 0, 0, 0.85);
-  cursor: pointer;
-  display: inline-flex;
-  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  justify-content: center;
-  line-height: 1.25;
-  margin: 0;
-  min-height: 3rem;
-  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
-  position: relative;
-  text-decoration: none;
-  transition: all 250ms;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  vertical-align: baseline;
-  width: auto;
-}
-
-.sematic input[type="submit"]:hover{
-
-  border-color: rgba(0, 0, 0, 0.15);
-  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
-  color: rgba(0, 0, 0, 0.65);
-}
-
-.sematic input[type="submit"]:focus{
-
-    border-color: rgba(0, 0, 0, 0.15);
-    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
-    color: rgba(0, 0, 0, 0.65);
-    
-}
-.sematic input[type="submit"]:active{
-  background-color: #F0F0F1;
-  border-color: rgba(0, 0, 0, 0.15);
-  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
-  color: rgba(0, 0, 0, 0.65);
-  transform: translateY(0);
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
