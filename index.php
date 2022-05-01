@@ -1,8 +1,3 @@
-<?php 
-
-    include_once("connect.php");
-
-?>
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -20,22 +15,19 @@
     <center><h1>Generator HTML</h1></center>
     <div class="two">
     <div class="semantic">
-    <?php 
-
-    $select = "SELECT * FROM podstawowe";
-    $res = mysqli_query($dbc,$select);
-
-    while($row = mysqli_fetch_row($res)){
-
-echo<<<END
-    <input type="submit" value="$row[1]" id="$row[1]" onclick="sprawdz('{$row[2]}')"> 
-END;
-
-
-    }
-
-
-    ?>
+    <input type="submit" value="<p></p>" id="<p></p>" onclick="sprawdz('<p></p>')"> 
+    <input type="submit" value="<h1></h1>" id="<h1></h1>" onclick="sprawdz('<h1></h1>')"> 
+    <input type="submit" value="<h2></h2>" id="<h2></h2>" onclick="sprawdz('<h2></h2>')"> 
+    <input type="submit" value="<h3></h3>" id="<h3></h3>" onclick="sprawdz('<h3></h3>')"> 
+    <input type="submit" value="<h4></h4>" id="<h4></h4>" onclick="sprawdz('<h4></h4>')"> 
+    <input type="submit" value="<article></article>" id="<article></article>" onclick="sprawdz('<article></article>')"> 
+    <input type="submit" value="<details></details>" id="<details></details>" onclick="sprawdz('<details></details>')"> 
+    <input type="submit" value="<header></header>" id="<header></header>" onclick="sprawdz('<header></header>')"> 
+    <input type="submit" value="<footer></footer>" id="<footer></footer>" onclick="sprawdz('<footer></footer>')"> 
+    <input type="submit" value="<main></main>" id="<main></main>" onclick="sprawdz('<main></main>')"> 
+    <input type="submit" value="<section></section>" id="<section></section>" onclick="sprawdz('<section></section>')"> 
+    <input type="submit" value="<script></script>" id="<script></script>" onclick="sprawdz('<script></script>')"> 
+    <input type="submit" value="Wyczyść" id="Wyczyśc" onclick="wyczysc()"> 
 
     </div>
     <div class="structur">
