@@ -27,7 +27,7 @@
     <input type="submit" value="<main></main>" id="<main></main>" onclick="sprawdz('<main></main>')"> 
     <input type="submit" value="<section></section>" id="<section></section>" onclick="sprawdz('<section></section>')"> 
     <input type="submit" value="<script></script>" id="<script></script>" onclick="sprawdz('<script></script>')"> 
-    <input type="submit" value="Wyczyść" id="Wyczyśc" onclick="wyczysc()"> 
+
 
     </div>
     <div class="structur">
